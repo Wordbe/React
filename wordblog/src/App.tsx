@@ -7,7 +7,7 @@ import SignUp from './view/member/SignUp';
 function App() {
   return (
     <>
-      {/* <Header></Header> */}
+      <Header></Header>
       <Route path="/" exact={true} component={Main} />
       <Route path="/sign-up" exact={true} component={SignUp} />
     </>

@@ -22,3 +22,7 @@ export const SearchBar = styled.input`
   padding: 0 10px;
   color: white;
 `
+
+export const Message = styled.div`
+  color: white;
+`;

@@ -40,8 +40,14 @@ export const ButtonWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* & + & {
-    margin-left: 500rem;
-  } */
+
+  button {
+    width: 220px;
+  }
 `;
 
+export const HorizonWrapper = styled.span`
+  & + & {
+    margin-right: 2rem;
+  }
+`;
