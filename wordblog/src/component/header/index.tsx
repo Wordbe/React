@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as S from "./style";
 
-const Header: React.FC = () => {
-  // const [user, setUser] = useState("");
-  const [count, setCount] = useState(1);
-  const [point, setPoint] = useState(1);
-
-  useEffect(() => {
-    setPoint(count * 2);
-  }, [count]);
-
-  const onClick = () => {
-    setCount(count + 1);
-  };
+function Header() {
 
   return (
     <S.Header>
-      <S.SearchBar></S.SearchBar>
-      <S.Message>
-        {count} {point} <button onClick={onClick}>count up</button>
-      </S.Message>
+      <S.NavBelt>Belt</S.NavBelt>
+      <S.NavMain>Main</S.NavMain>
     </S.Header>
   );
 };
