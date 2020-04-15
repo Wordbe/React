@@ -5,12 +5,12 @@ import styled from "styled-components/macro";
 export const Header = styled.header`
   width: 100%;
   height: 6rem;
-
+  color: white;
   display: flex;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
-
   background-color: #232F3E;
-
 `;
 
 export const NavBar = styled.div`
@@ -24,27 +24,35 @@ export const NavBar = styled.div`
 export const NavBelt = styled.div`
   width: 100%;
   font-size: 14px;
-
   color: white;
 `;
 
 export const NavMain = styled.div`
   width: 100%;
-
   color: white;
 `;
 
-export const SearchBar = styled.input`
-  width: 200px;
-  height: 28px;
+export const pageContent = styled.div`
+  background-color: rgb(234, 237, 237);
+  margin: 0 auto;
+  width: 100%;
+`;
 
-  background-color: #3F4448;
-  border: 0;
-  border-radius: 5px;
+export const DesktopBanner = styled.div`
+  box-sizing: border-box;
+  color: rgb(17, 17, 17);
+  margin: 0;
+`;
+
+export const BannerImage = styled.img`
+  width: 1500px;
+  height: 600px;
+`;
+
+export const GwLayout = styled.div`
+  box-sizing: border-box;
+  color: rgb(17, 17, 17);
+
+  margin: 0;
   padding: 0 10px;
-  color: white;
-`
-
-export const Message = styled.div`
-  color: white;
 `;
