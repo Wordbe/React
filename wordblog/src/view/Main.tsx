@@ -1,5 +1,4 @@
 import React from 'react';
-import Body from './Body';
 import Wrapper from './Wrapper';
 import Button from '../component/button/index';
 

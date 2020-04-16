@@ -8,8 +8,6 @@ export const Header = styled.header`
   color: white;
   display: flex;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
   background-color: #232F3E;
 `;
 
@@ -28,6 +26,7 @@ export const NavBelt = styled.div`
 `;
 
 export const NavMain = styled.div`
+  display: flex;
   width: 100%;
   color: white;
 `;
@@ -45,8 +44,8 @@ export const DesktopBanner = styled.div`
 `;
 
 export const BannerImage = styled.img`
-  width: 1500px;
-  height: 600px;
+  width: 700px;
+  height: 300px;
 `;
 
 export const GwLayout = styled.div`
