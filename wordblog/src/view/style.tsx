@@ -7,6 +7,8 @@ export const pageContent = styled.div`
 `;
 
 export const DesktopBanner = styled.div`
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   color: rgb(17, 17, 17);
   margin: 0;
@@ -14,7 +16,7 @@ export const DesktopBanner = styled.div`
 
 export const BannerImage = styled.img`
   width: 700px;
-  height: 300px;
+  height: 400px;
 `;
 
 export const GwLayout = styled.div`

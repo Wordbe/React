@@ -10,7 +10,7 @@ function Main({ name }: MainProps) {
   return (
     <>
       <S.pageContent>PageContent
-        <S.DesktopBanner>DesktopBanner
+        <S.DesktopBanner>
           <S.BannerImage src={BannerImg}></S.BannerImage>
         </S.DesktopBanner>
         <S.GwLayout>GwLayout</S.GwLayout>

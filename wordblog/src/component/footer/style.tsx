@@ -1,16 +1,15 @@
 import styled from "styled-components/macro";
+import { darken, lighten } from 'polished';
 
 export const NavFooter = styled.div`
   background-color: #232F3E;
   margin: 30px 0 8px 0;
-  padding: 0 7px;
+  padding: 0;
 
   font-size: 1rem;
   line-height: 19px;
-  color: #111;
+  color: white;
 `;
-
-
 
 export const NavBackToTop = styled.a`
   cursor: pointer;
@@ -19,12 +18,20 @@ export const NavBackToTop = styled.a`
 `;
 
 export const NavFooterBackToTop = styled.div`
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 40px;
   background-color: #37475A;
-  color: #004B91;
+  &:hover {
+    background-color: ${lighten(0.1, '#37475A')};
+  }
+  &:active {
+    background-color: ${darken(0.1, '#37475A')};
+  }
 
   span {
+    display: flex;
+    justify-content: center;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -55,6 +62,11 @@ export const NavFooterLogoLine = styled.span`
   box-sizing: border-box;
 `;
 
+export const Logo = styled.img`
+  width: 200px;
+  height: 40px;
+`;
+
 export const NavFooterCopyright = styled.div`
   background-color: #131A22;
   margin: 0;
@@ -62,10 +74,14 @@ export const NavFooterCopyright = styled.div`
   color: #767676;
   white-space: nowrap;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 
   ul, li {
     display: inline;
     margin: 0;
-    color: #111;
+    padding: 0.6rem;
+    color: #999;
+    font-size: 13px;
   }
 `;
