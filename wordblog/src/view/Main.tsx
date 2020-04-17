@@ -1,17 +1,21 @@
 import React from 'react';
-import Wrapper from './Wrapper';
-import Button from '../component/button/index';
+import * as S from "./style";
+import BannerImg from '../images/store.png';
 
 type MainProps = {
   name: String
 }
 
 function Main({ name }: MainProps) {
-
   return (
-    <Wrapper>
-      <h1>Wordbe-zon, welcome {name}</h1>
-    </Wrapper>
+    <>
+      <S.pageContent>PageContent
+        <S.DesktopBanner>DesktopBanner
+          <S.BannerImage src={BannerImg}></S.BannerImage>
+        </S.DesktopBanner>
+        <S.GwLayout>GwLayout</S.GwLayout>
+      </S.pageContent>
+    </>
   )
 }
 

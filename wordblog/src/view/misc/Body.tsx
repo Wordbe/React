@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import PostList from './post/PostList';
-import CreatePost from './post/CreatePost';
+import PostList from '../post/PostList';
+import CreatePost from '../post/CreatePost';
 
 type HeartProps = {
   heart: boolean,
