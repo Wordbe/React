@@ -5,9 +5,9 @@ function Navigator() {
 
   return (
     <>
-      <S.NavLeft>NavLeft</S.NavLeft>
-      <S.NavFill>NavFill</S.NavFill>
-      <S.NavRight>NavRight</S.NavRight>
+      <S.NavLeft></S.NavLeft>
+      <S.NavFill></S.NavFill>
+      <S.NavRight></S.NavRight>
     </>
   );
 };
