@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from 'react-router-dom';
 import * as S from "./style";
 import * as Nav from '../navigator/style';
 import LogoImage from '../../images/logo-wordbe-white.png'
@@ -35,7 +36,13 @@ function Header() {
           </S.NavBelt>
           <S.NavMain>
             <Nav.NavLeft></Nav.NavLeft>
-            <Nav.NavFill></Nav.NavFill>
+            <Nav.NavFill>
+              <Nav.NavList>
+                <Route path="/today-deal" exact={true}>Today's Deal</Route>
+                <Route path="/customer-service" exact={true}>Customer Service</Route>
+                <Route path="/registry" exact={true}>Registry</Route>
+              </Nav.NavList>
+            </Nav.NavFill>
             <Nav.NavRight></Nav.NavRight>
           </S.NavMain>
         </S.NavBar>

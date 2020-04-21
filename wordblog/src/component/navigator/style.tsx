@@ -78,3 +78,9 @@ export const NavSignIn = styled.div`
     line-height: 20px;
   }
 `;
+
+export const NavList = styled.div`
+  margin: 0;
+  width: 1160px;
+  height: 40px;
+`;
