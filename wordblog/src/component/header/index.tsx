@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import * as S from "./style";
 import * as Nav from '../navigator/style';
 import LogoImage from '../../images/logo-wordbe-white.png'
-import { MdViewHeadline } from 'react-icons/md'
+import { MdViewHeadline, MdSearch } from 'react-icons/md'
 
 function Header() {
 
@@ -21,9 +21,19 @@ function Header() {
             <Nav.NavFill>
               <Nav.NavSearch>
                 <Nav.NavSearchBar>
-                  <Nav.NavLeft>1</Nav.NavLeft>
-                  <Nav.NavFill>2</Nav.NavFill>
-                  <Nav.NavRight>3</Nav.NavRight>
+                  <Nav.NavLeft></Nav.NavLeft>
+                  <Nav.NavFill>
+                    <Nav.NavSearchField>
+                      <label id="nav-search-label" form="searchbartextbox"></label>
+                      <Nav.SearchBoxInput></Nav.SearchBoxInput>
+                    </Nav.NavSearchField>
+                  </Nav.NavFill>
+                  <Nav.NavRight>
+                    <Nav.SearchSubmit>
+                      <span><MdSearch /></span>
+                      <input type="submit" value="Go" />
+                    </Nav.SearchSubmit>
+                  </Nav.NavRight>
                 </Nav.NavSearchBar>
               </Nav.NavSearch>
             </Nav.NavFill>

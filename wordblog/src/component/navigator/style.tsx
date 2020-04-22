@@ -65,6 +65,56 @@ export const NavSearchBar = styled.form`
 
 `;
 
+export const NavSearchField = styled.div`
+  height: 40px;
+  top: 5px;
+  border: none;
+  border-top: 1px solid transparent;
+`;
+
+export const SearchBoxInput = styled.input`
+  width: 100%;
+  height: 25px;
+  padding: 5px 10px;
+  
+  color: #111;
+  font-size: 15px;
+  line-height: 15px;
+  text-indent: 8px;
+  box-shadow: none;
+  outline: 0;
+`;
+
+export const SearchSubmit = styled.div`
+  display: flex;
+  justify-content: center;
+
+  background-color: #febd69;
+  background-image: none;
+  border: none;
+  width: 45px;
+  height: 40px;
+  top: 5px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+
+  span {
+    background-position: -10px -290px;
+    font-size: 35px;
+    color: #111;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: 0 0;
+    border: none;
+    text-indent: -1000px;
+    line-height: 1px;
+  }
+`;
+
 export const NavSignIn = styled.div`
   width: 130px;
   height: 50px;
