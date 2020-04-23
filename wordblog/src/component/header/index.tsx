@@ -30,8 +30,7 @@ function Header() {
                   </Nav.NavFill>
                   <Nav.NavRight>
                     <Nav.SearchSubmit>
-                      <span><MdSearch /></span>
-                      <input type="submit" value="Go" />
+                      <span><MdSearch type="submit" /></span>
                     </Nav.SearchSubmit>
                   </Nav.NavRight>
                 </Nav.NavSearchBar>
@@ -48,6 +47,9 @@ function Header() {
             <Nav.NavLeft></Nav.NavLeft>
             <Nav.NavFill>
               <Nav.NavList>
+                <span>Today's Deal</span>
+                <span>Customer Service</span>
+                <span>Registry</span>
                 <Route path="/today-deal" exact={true}>Today's Deal</Route>
                 <Route path="/customer-service" exact={true}>Customer Service</Route>
                 <Route path="/registry" exact={true}>Registry</Route>

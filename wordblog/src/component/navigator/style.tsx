@@ -15,6 +15,7 @@ export const NavLeft = styled.div`
 `;
 
 export const NavFill = styled.div`
+  margin: 0 auto;
   width: auto;
   height: 60px;
   /* overflow: visible; */
@@ -69,13 +70,14 @@ export const NavSearchField = styled.div`
   height: 40px;
   top: 5px;
   border: none;
-  border-top: 1px solid transparent;
 `;
 
 export const SearchBoxInput = styled.input`
   width: 100%;
-  height: 25px;
-  padding: 5px 10px;
+  height: 30px;
+  padding: 4px 10px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   
   color: #111;
   font-size: 15px;
@@ -90,28 +92,17 @@ export const SearchSubmit = styled.div`
   justify-content: center;
 
   background-color: #febd69;
-  background-image: none;
   border: none;
   width: 45px;
   height: 40px;
-  top: 5px;
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
 
   span {
-    background-position: -10px -290px;
-    font-size: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
     color: #111;
-  }
-
-  input {
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background: 0 0;
-    border: none;
-    text-indent: -1000px;
-    line-height: 1px;
+    cursor: pointer;
   }
 `;
 
