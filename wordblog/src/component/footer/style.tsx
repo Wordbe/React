@@ -3,7 +3,7 @@ import { darken, lighten } from 'polished';
 
 export const NavFooter = styled.div`
   background-color: #232F3E;
-  margin: 30px 0 8px 0;
+  margin: 0 0 8px 0;
   padding: 0;
 
   font-size: 1rem;

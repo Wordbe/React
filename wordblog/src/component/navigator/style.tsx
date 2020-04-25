@@ -1,12 +1,11 @@
 import styled from "styled-components/macro";
+import { StyledLink } from "../link/style";
 
 /*  flex: flex-grow flex-shrink flex-basis
  *  flex: none = 0 0 auto;
  */
 
 export const NavLeft = styled.div`
-  /* position: relative;
-  float: left; */
   margin-right: auto;
   width: auto;
   height: 60px;
@@ -18,16 +17,17 @@ export const NavFill = styled.div`
   margin: 0 auto;
   width: auto;
   height: 60px;
-  /* overflow: visible; */
 `;
 
 export const NavRight = styled.div`
-  /* position: relative;
-  float: right; */
   margin-left: auto;
   width: auto;
   height: 60px;
 `;
+
+/* 
+ ************************************** NavBelt **************************************
+ */
 
 export const NavHamburgerMenu = styled.div`
   flex: none;
@@ -44,18 +44,36 @@ export const NavHamburgerMenu = styled.div`
   cursor: pointer;
 `;
 
-export const NavLogo = styled.img`
+export const NavLogoDiv = styled.div`
   flex: none;
   margin: 0;
   padding: 10px 0;
 
-  width: 165px;
+  width: 161px;
   height: 50px;
   cursor: pointer;
 `;
 
+export const NavLogoLink = styled(StyledLink)``;
+
+export const NavLogo = styled.img`
+  margin-top: 5px;
+  width: 103px;
+  height: 40px;
+  cursor: pointer;
+`;
+
+export const NavSearchFill = styled(NavFill)`
+  margin: 0;
+  width: 100%;
+`;
+
+export const NavSearchRight = styled(NavRight)`
+  margin: 0;
+`;
+
 export const NavSearch = styled.div`
-  width: auto;
+  width: 1000px;
   height: 60px;
   padding: 10px 4px;
 `;
@@ -63,13 +81,6 @@ export const NavSearch = styled.div`
 export const NavSearchBar = styled.form`
   height: 40px;
   display: flex;
-
-`;
-
-export const NavSearchField = styled.div`
-  height: 40px;
-  top: 5px;
-  border: none;
 `;
 
 export const SearchBoxInput = styled.input`
@@ -78,7 +89,11 @@ export const SearchBoxInput = styled.input`
   padding: 4px 10px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  
+  border-left: 1px solid transparent;
+  border-right: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+
   color: #111;
   font-size: 15px;
   line-height: 15px;
@@ -106,6 +121,20 @@ export const SearchSubmit = styled.div`
   }
 `;
 
+export const NavTools = styled.div`
+  margin-top: 2px;
+  margin-right: 30px;
+  padding: 3px 0 0 0;
+  display: flex;
+`;
+
+export const NavSignUpLink = styled(StyledLink)`
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+`;
+
 export const NavSignIn = styled.div`
   width: 130px;
   height: 50px;
@@ -120,8 +149,22 @@ export const NavSignIn = styled.div`
   }
 `;
 
+
+
+/* 
+ ************************************** NavMain **************************************
+ */
 export const NavList = styled.div`
-  margin: 0;
+  margin-left: 140px;
+  padding-left: 2px;
   width: 1160px;
   height: 40px;
+`;
+
+export const NavListLink = styled(StyledLink)`
+  margin: 1px 2px 12px 1px;
+  padding: 7px 8px 7px 8px;
+  color: #ccc;
+  font-size: 13px;
+  font-weight: bold;
 `;

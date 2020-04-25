@@ -1,11 +1,17 @@
-import React from "react";
-import { Route } from 'react-router-dom';
+import React, { useState } from "react";
 import * as S from "./style";
 import * as Nav from '../navigator/style';
 import LogoImage from '../../images/logo-wordbe-white.png'
 import { MdViewHeadline, MdSearch } from 'react-icons/md'
 
 function Header() {
+  const [navFill, setNavFill] = useState("");
+  const onNavFillChange = (e) => {
+    setNavFill(e.target.value);
+  }
+  const onClick = () => {
+    console.log(navFill);
+  }
 
   return (
     <>
@@ -16,43 +22,46 @@ function Header() {
               <Nav.NavHamburgerMenu>
                 <MdViewHeadline />
               </Nav.NavHamburgerMenu>
-              <Nav.NavLogo src={LogoImage}></Nav.NavLogo>
+              <Nav.NavLogoDiv>
+                <Nav.NavLogoLink to="/">
+                  <Nav.NavLogo src={LogoImage}></Nav.NavLogo>
+                </Nav.NavLogoLink>
+              </Nav.NavLogoDiv>
             </Nav.NavLeft>
             <Nav.NavFill>
               <Nav.NavSearch>
                 <Nav.NavSearchBar>
-                  <Nav.NavLeft></Nav.NavLeft>
-                  <Nav.NavFill>
-                    <Nav.NavSearchField>
-                      <label id="nav-search-label" form="searchbartextbox"></label>
-                      <Nav.SearchBoxInput></Nav.SearchBoxInput>
-                    </Nav.NavSearchField>
-                  </Nav.NavFill>
-                  <Nav.NavRight>
+                  <Nav.NavSearchFill>
+                    <label id="nav-search-label" form="searchbartextbox"></label>
+                    <Nav.SearchBoxInput type="text" onChange={onNavFillChange}></Nav.SearchBoxInput>
+                  </Nav.NavSearchFill>
+                  <Nav.NavSearchRight>
                     <Nav.SearchSubmit>
-                      <span><MdSearch type="submit" /></span>
+                      <span><MdSearch onClick={onClick} /></span>
                     </Nav.SearchSubmit>
-                  </Nav.NavRight>
+                  </Nav.NavSearchRight>
                 </Nav.NavSearchBar>
               </Nav.NavSearch>
             </Nav.NavFill>
             <Nav.NavRight>
-              <Nav.NavSignIn>
-                <span>로그인</span>
-                <span>Account & Lists</span>
-              </Nav.NavSignIn>
+              <Nav.NavTools>
+                <Nav.NavSignIn>
+                  <span>로그인</span>
+                  <span>Account & Lists</span>
+                </Nav.NavSignIn>
+                <Nav.NavSignUpLink to="/sign-up">
+                  <span>회원가입</span>
+                </Nav.NavSignUpLink>
+              </Nav.NavTools>
             </Nav.NavRight>
           </S.NavBelt>
           <S.NavMain>
             <Nav.NavLeft></Nav.NavLeft>
             <Nav.NavFill>
               <Nav.NavList>
-                <span>Today's Deal</span>
-                <span>Customer Service</span>
-                <span>Registry</span>
-                <Route path="/today-deal" exact={true}>Today's Deal</Route>
-                <Route path="/customer-service" exact={true}>Customer Service</Route>
-                <Route path="/registry" exact={true}>Registry</Route>
+                <Nav.NavListLink to="/today-deal">Today's Deal</Nav.NavListLink>
+                <Nav.NavListLink to="/customer-service">Customer Service</Nav.NavListLink>
+                <Nav.NavListLink to="/registry">Registry</Nav.NavListLink>
               </Nav.NavList>
             </Nav.NavFill>
             <Nav.NavRight></Nav.NavRight>

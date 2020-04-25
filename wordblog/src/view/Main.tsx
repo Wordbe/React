@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from "./style";
-import BannerImg from '../images/store.png';
+import BannerImg from '../images/world-network.jpg';
 
 type MainProps = {
   name: String
@@ -9,11 +9,11 @@ type MainProps = {
 function Main({ name }: MainProps) {
   return (
     <>
-      <S.pageContent>PageContent
+      <S.pageContent>
         <S.DesktopBanner>
           <S.BannerImage src={BannerImg}></S.BannerImage>
         </S.DesktopBanner>
-        <S.GwLayout>GwLayout</S.GwLayout>
+        <S.GwLayout></S.GwLayout>
       </S.pageContent>
     </>
   )

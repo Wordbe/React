@@ -1,8 +1,8 @@
 import styled from "styled-components/macro";
 
 export const pageContent = styled.div`
-  background-color: rgb(234, 237, 237);
-  margin: 0 auto;
+  background-color: white;
+  margin: 0 auto 20px;
   width: 100%;
 `;
 
@@ -15,8 +15,8 @@ export const DesktopBanner = styled.div`
 `;
 
 export const BannerImage = styled.img`
-  width: 700px;
-  height: 400px;
+  width: 1200px;
+  height: 600px;
 `;
 
 export const GwLayout = styled.div`
