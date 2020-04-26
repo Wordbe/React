@@ -9,8 +9,14 @@ function Header() {
   const onNavFillChange = (e) => {
     setNavFill(e.target.value);
   }
-  const onClick = () => {
-    console.log(navFill);
+
+  const onFormSubmit = (e) => {
+    if (e.keyCode === 13 && e.shiftKey === false) {
+      e.preventDefault();
+      const url = "/s?k=" + navFill;
+      console.log(url);
+      window.location.assign(url);
+    }
   }
 
   return (
@@ -33,11 +39,13 @@ function Header() {
                 <Nav.NavSearchBar>
                   <Nav.NavSearchFill>
                     <label id="nav-search-label" form="searchbartextbox"></label>
-                    <Nav.SearchBoxInput type="text" onChange={onNavFillChange}></Nav.SearchBoxInput>
+                    <Nav.SearchBoxInput type="text" onChange={onNavFillChange} onKeyDown={onFormSubmit}></Nav.SearchBoxInput>
                   </Nav.NavSearchFill>
                   <Nav.NavSearchRight>
                     <Nav.SearchSubmit>
-                      <span><MdSearch onClick={onClick} /></span>
+                      <Nav.SearchSubmitLink to={`/s?k=${navFill}`}>
+                        <MdSearch />
+                      </Nav.SearchSubmitLink>
                     </Nav.SearchSubmit>
                   </Nav.NavSearchRight>
                 </Nav.NavSearchBar>

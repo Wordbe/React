@@ -102,6 +102,14 @@ export const SearchBoxInput = styled.input`
   outline: 0;
 `;
 
+export const SearchSubmitLink = styled(StyledLink)`
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #111;
+  cursor: pointer;
+`;
+
 export const SearchSubmit = styled.div`
   display: flex;
   justify-content: center;
@@ -111,14 +119,6 @@ export const SearchSubmit = styled.div`
   width: 45px;
   height: 40px;
   border-radius: 0 4px 4px 0;
-
-  span {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    color: #111;
-    cursor: pointer;
-  }
 `;
 
 export const NavTools = styled.div`
