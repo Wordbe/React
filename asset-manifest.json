@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/React/wordblog/static/css/main.ba9146b3.chunk.css",
-    "main.js": "/React/wordblog/static/js/main.0eac7f1e.chunk.js",
-    "main.js.map": "/React/wordblog/static/js/main.0eac7f1e.chunk.js.map",
-    "runtime-main.js": "/React/wordblog/static/js/runtime-main.335a17fe.js",
-    "runtime-main.js.map": "/React/wordblog/static/js/runtime-main.335a17fe.js.map",
-    "static/js/2.2cb61b0e.chunk.js": "/React/wordblog/static/js/2.2cb61b0e.chunk.js",
-    "static/js/2.2cb61b0e.chunk.js.map": "/React/wordblog/static/js/2.2cb61b0e.chunk.js.map",
-    "index.html": "/React/wordblog/index.html",
-    "precache-manifest.69acf9bd2a734571654ebd15785646e5.js": "/React/wordblog/precache-manifest.69acf9bd2a734571654ebd15785646e5.js",
-    "service-worker.js": "/React/wordblog/service-worker.js",
-    "static/css/main.ba9146b3.chunk.css.map": "/React/wordblog/static/css/main.ba9146b3.chunk.css.map",
-    "static/js/2.2cb61b0e.chunk.js.LICENSE.txt": "/React/wordblog/static/js/2.2cb61b0e.chunk.js.LICENSE.txt",
-    "static/media/logo-wordbe-white.png": "/React/wordblog/static/media/logo-wordbe-white.ae5ef4f0.png",
-    "static/media/world-network.jpg": "/React/wordblog/static/media/world-network.fa709e63.jpg"
+    "main.css": "/React/static/css/main.ba9146b3.chunk.css",
+    "main.js": "/React/static/js/main.951cbb54.chunk.js",
+    "main.js.map": "/React/static/js/main.951cbb54.chunk.js.map",
+    "runtime-main.js": "/React/static/js/runtime-main.f9c96180.js",
+    "runtime-main.js.map": "/React/static/js/runtime-main.f9c96180.js.map",
+    "static/js/2.c9b4e28e.chunk.js": "/React/static/js/2.c9b4e28e.chunk.js",
+    "static/js/2.c9b4e28e.chunk.js.map": "/React/static/js/2.c9b4e28e.chunk.js.map",
+    "index.html": "/React/index.html",
+    "precache-manifest.566c21f78e2e405d75889054d413eadb.js": "/React/precache-manifest.566c21f78e2e405d75889054d413eadb.js",
+    "service-worker.js": "/React/service-worker.js",
+    "static/css/main.ba9146b3.chunk.css.map": "/React/static/css/main.ba9146b3.chunk.css.map",
+    "static/js/2.c9b4e28e.chunk.js.LICENSE.txt": "/React/static/js/2.c9b4e28e.chunk.js.LICENSE.txt",
+    "static/media/logo-wordbe-white.png": "/React/static/media/logo-wordbe-white.ae5ef4f0.png",
+    "static/media/world-network.jpg": "/React/static/media/world-network.fa709e63.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.335a17fe.js",
-    "static/js/2.2cb61b0e.chunk.js",
+    "static/js/runtime-main.f9c96180.js",
+    "static/js/2.c9b4e28e.chunk.js",
     "static/css/main.ba9146b3.chunk.css",
-    "static/js/main.0eac7f1e.chunk.js"
+    "static/js/main.951cbb54.chunk.js"
   ]
 }
