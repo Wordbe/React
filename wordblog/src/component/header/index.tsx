@@ -14,8 +14,7 @@ function Header() {
     if (e.keyCode === 13 && e.shiftKey === false) {
       e.preventDefault();
       const url = "/s?k=" + navFill;
-      console.log(url);
-      window.location.assign(url);
+      // window.location.href = url;
     }
   }
 

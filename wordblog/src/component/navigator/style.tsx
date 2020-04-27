@@ -78,7 +78,7 @@ export const NavSearch = styled.div`
   padding: 10px 4px;
 `;
 
-export const NavSearchBar = styled.form`
+export const NavSearchBar = styled.div`
   height: 40px;
   display: flex;
 `;
