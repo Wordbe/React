@@ -16,7 +16,7 @@ function SearchResult({ location }) {
         </S.SearchResultToobarLeft>
         <S.SearchResultToobarRight></S.SearchResultToobarRight>
       </S.SearchResultToobar>
-      <S.SearchResultContent></S.SearchResultContent>
+      <S.SearchResultContent>SearchResultContent</S.SearchResultContent>
     </>
   );
 }
